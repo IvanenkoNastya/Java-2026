@@ -4,5 +4,5 @@
 /**
  * 
  */
-module lab1 {
+module lab1_task1 {
 }
