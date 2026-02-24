@@ -8,7 +8,7 @@ public class Task4 {
 		Scanner inputScannerObj = new Scanner(System.in);
 		String inputStr = inputScannerObj.nextLine();
 		inputScannerObj.close();
-		int targetNumber = TryParceInt(inputStr, -1);
+		int targetNumber = tryParceInt(inputStr, -1);
 		if (targetNumber < 1) {
 			System.out.print("invalid input");
 			return;
@@ -23,7 +23,7 @@ public class Task4 {
 		}
 	}
 	
-	public static int TryParceInt(String str, int defaultVariable) {
+	public static int tryParceInt(String str, int defaultVariable) {
 		try {
 			return Integer.parseInt(str);			
 		} catch (NumberFormatException e) {			

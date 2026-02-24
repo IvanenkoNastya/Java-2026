@@ -8,7 +8,7 @@ public class Main {
 		String inputStr = inputScannerObj.nextLine();
 		inputScannerObj.close();
 		
-		int number = TryParceInt(inputStr, 0);
+		int number = tryParceInt(inputStr, 0);
 		//int number = 23;
 		System.out.print("Number " + number);		
 		if (number % 2 == 0) {
@@ -18,7 +18,7 @@ public class Main {
 		}
 	}
 	
-	public static int TryParceInt(String str, int defaultVariable) {
+	public static int tryParceInt(String str, int defaultVariable) {
 		try {
 			return Integer.parseInt(str);			
 		} catch (NumberFormatException e) {			

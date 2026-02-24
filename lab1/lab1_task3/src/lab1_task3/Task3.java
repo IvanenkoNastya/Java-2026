@@ -8,7 +8,7 @@ public class Task3 {
 		Scanner inputScannerObj = new Scanner(System.in);
 		String inputStr = inputScannerObj.nextLine();
 		inputScannerObj.close();
-		int mark = TryParceInt(inputStr, -1);
+		int mark = tryParceInt(inputStr, -1);
 
 		//int mark = 4;		
 		String theAnswer = new String();
@@ -37,7 +37,7 @@ public class Task3 {
 	    System.out.print(mark + " is " + theAnswer);		
 	}
 	
-	public static int TryParceInt(String str, int defaultVariable) {
+	public static int tryParceInt(String str, int defaultVariable) {
 		try {
 			return Integer.parseInt(str);			
 		} catch (NumberFormatException e) {			
