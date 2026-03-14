@@ -2,17 +2,23 @@ package lab3_task8;
 
 import java.util.List;
 
-public abstract class Dog extends Animal {
+public class Dog extends Animal {
+	
+	public Dog(String name) {
+		super(name);
+	}
 	
 	@Override
 	public String makeSound() {
-		return "woof";
+		String sound = "woof";
+		System.out.print(sound);
+		return sound;
 	}
 	
-	@Override
+	/*@Override
 	public static List<Dog> addAnimals(List<Dog> list, Dog animal) {
 		list.add(animal);
 		return list;
-	}
+	}*/
 	
 }
