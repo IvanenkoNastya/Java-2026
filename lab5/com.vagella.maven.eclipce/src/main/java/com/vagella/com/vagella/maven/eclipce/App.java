@@ -1,6 +1,5 @@
 package com.vagella.com.vagella.maven.eclipce;
 
-import java.beans.Statement;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -12,9 +11,6 @@ import java.sql.SQLException;
 import java.sql.Types;
 import java.util.Properties;
 
-/**
- * Hello world!
- */
 public class App {
 	/*public static void printUsage() {
 		System.out.println("Usage:");
@@ -104,7 +100,7 @@ public class App {
 			
 			// delete
 			System.out.println("-- delete:");
-			//deleteEntity(con, "CountryLanguage", 35);
+			deleteEntity(con, "CountryLanguage", 35);
 			
 			// search
 			System.out.println("-- search:");
@@ -326,7 +322,7 @@ public class App {
     		int id
     		) { // DELETE
     	try {
-    		String sqlQueryUpdate = "UPDATE hotel.\"" + tableName + "\" "
+    		String sqlQueryUpdate = "DELETE FROM hotel.\"" + tableName + "\" "
     				+ "WHERE \"" + getIdName(tableName) + "\" = ?";
 			PreparedStatement preparedStatement = con.prepareStatement(sqlQueryUpdate);
 			preparedStatement.setInt(1, id);
